@@ -1,0 +1,7 @@
+{
+  "name": "ar-qroo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
