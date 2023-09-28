@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar style="--background: rgb(79, 146, 34)">
+    <ion-title style="color: white;">Localización</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" style="--background: white">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <a [routerLink]="['qroo']" style="text-decoration: none">
+          <ion-card class="bg cards">
+            <ion-card-content class="img-container">
+              <img
+                alt="qroo_escudo"
+                src="../../assets/icon/qroo-escudo.png"
+                class="img"
+              />
+            </ion-card-content>
+            <ion-card-header>
+              <ion-card-title class="cards-title">Quintana Roo</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </a>
+      </ion-col>
+      <ion-col>
+        <a [routerLink]="['yucatan']"style="text-decoration: none">
+          <ion-card class="bg cards">
+            <ion-card-content class="img-container">
+              <img
+                alt="yucatan-escudo"
+                src="../../assets/icon/yucatan-escudo.png"
+                class="img"
+              />
+            </ion-card-content>
+            <ion-card-header>
+              <ion-card-title class="cards-title">Yucatan</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <a [routerLink]="['campeche']" style="text-decoration: none">
+          <ion-card class="bg cards">
+            <ion-card-content class="img-container">
+              <img
+                alt="yucatan-escudo"
+                src="../../assets/icon/campeche-escudo.png"
+                class="img"
+              />
+            </ion-card-content>
+            <ion-card-header>
+              <ion-card-title class="cards-title">Campeche</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

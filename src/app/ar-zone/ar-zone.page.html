@@ -1,0 +1,579 @@
+<ion-header>
+  <ion-toolbar style="--background: rgb(79, 146, 34)">
+    <ion-title style="color: white;">Zona AR</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()"
+        ><ion-icon style="color: white;" name="close" slot="icon-only"></ion-icon
+      ></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--background: white">
+  <div class="recurso-container">
+    <ion-grid [fixed]="true" class="grid">
+      <ion-row class="row">
+        <ion-col class="col">
+          <iframe
+            *ngIf="recurso == 1"
+            src="../../assets/aframe-tulum.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 2"
+            src="../../assets/aframe-elrey.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 3"
+            src="../../assets/aframe-san-miguelito.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 4"
+            src="../../assets/aframe-xelha.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 5"
+            src="../../assets/aframe-chacchoben.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 6"
+            src="../../assets/aframe-kinichna.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 7"
+            src="../../assets/aframe-dzibanche.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 8"
+            src="../../assets/aframe-oxtankah.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 9"
+            src="../../assets/aframe-chakanbakan.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 10"
+            src="../../assets/aframe-coba.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 11"
+            src="../../assets/aframe-dzibilchaltun.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 12"
+            src="../../assets/aframe-chacmultun.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 13"
+            src="../../assets/aframe-chichen.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 14"
+            src="../../assets/aframe-balamcanche.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 15"
+            src="../../assets/aframe-acanceh.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 16"
+            src="../../assets/aframe-uxmal.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 17"
+            src="../../assets/aframe-kabah.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 18"
+            src="../../assets/aframe-ake.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 19"
+            src="../../assets/aframe-ekbalam.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 20"
+            src="../../assets/aframe-izamal.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 21"
+            src="../../assets/aframe-mayapan.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 22"
+            src="../../assets/aframe-edzna.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 23"
+            src="../../assets/aframe-balamku.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 24"
+            src="../../assets/aframe-xpuhil.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 25"
+            src="../../assets/aframe-chicanna.html"
+          ></iframe>
+          <iframe
+            *ngIf="recurso == 26"
+            src="../../assets/aframe-eltigre.html"
+          ></iframe>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row">
+        <ion-col class="col">
+          <ion-card
+            class="ion-no-margin card"
+            style="background: white"
+            mode="md"
+          >
+            <ion-card-header>
+              <ion-card-title class="title" *ngIf="recurso == 1"
+                >Ruinas de Tulum
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 2"
+                >El Rey
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 3"
+                >San Miguelito
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 4"
+                >Xelhá
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 5"
+                >Chacchoben
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 6"
+                >Kinichná
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 7"
+                >Dzibanché
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 8"
+                >Oxtankah
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 9"
+                >Chakanbakan
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 10"
+                >Cobá
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 11"
+                >Dzibilchaltún
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 12"
+                >Chacmultún
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 13"
+                >Chichén ltzá
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 14"
+                >Balamcanché
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 15"
+                >Acanceh
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 16"
+                >Uxmal
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 17"
+                >Kabah
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 18"
+                >Aké
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 19"
+                >Ek' Balam
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 20"
+                >Izamal
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 21"
+                >Mayapán
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 22"
+                >Edzná
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 23"
+                >Balamkú
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 24"
+                >Xpuhil
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 25"
+                >Chicanná
+              </ion-card-title>
+              <ion-card-title class="title" *ngIf="recurso == 26"
+                >El Tigre (itzamkanac)
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content *ngIf="recurso == 1" class="card-content"
+              >Tulum es uno de los sitios más antiguamente registrados y
+              conocidos por el mundo occidental, pues en 1518 el cronista
+              español Juan Díaz narraba haber visto una ciudad tan grande como
+              Sevilla con una torre, que indudablemente era El Castillo de
+              Tulum, el cual en aquel tiempo aún era ocupado por los habitantes
+              de esa jefatura independiente. Las fuentes del siglo XVI designan
+              al sitio con el nombre de Zamá, que posiblemente se refiera a la
+              palabra maya para denominar mañana o amanecer, lo cual es
+              comprensible ya que el sitio se encuentra emplazado en la porción
+              más alta de la costa oriental en donde contemplar el amanecer es
+              un espectáculo especialmente notable.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 2" class="card-content"
+              >El Rey es el asentamiento prehispánico más notable del área
+              isleña de Cancún. La sección explorada, que incluye cuarenta y
+              siete estructuras, corresponde a una zona religiosa y
+              administrativa en la que seguramente se llevaron a cabo
+              importantes ceremonias y vivieron los personajes de mayor estatus
+              en la vida política de esa región. En algunas de las estructuras
+              palaciegas que hoy pueden visitarse se conservan fragmentos de
+              pintura mural que hacen alusión a dioses y elementos iconográficos
+              relacionados con la vida religiosa de los mayas posclásicos del
+              norte de Quintana Roo.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 3 " class="card-content"
+              >El sitio formó parte del antiguo cacicazgo de Ecab. Las
+              principales actividades económicas de esta provincia fueron la
+              pesca, la agricultura, la producción de sal, de miel, de copal y
+              de algodón, que se comercializaban en una compleja red que se
+              desarticuló a mediados del siglo XVI, con el asentamiento de los
+              españoles en la Península de Yucatán. Para esas fechas se
+              abandonan gradualmente los centros de población indígena hasta
+              quedar la región del actual estado de Quintana Roo, abandonada por
+              completo. Durante las exploraciones arqueológicas se ha podido
+              recuperar mercancía foránea, como artefactos de basalto, sílex,
+              anillos de cobre. Cronología: Posclásico Tardío, 1200 d.C., a 1550
+              d.C.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 4" class="card-content"
+              >Xelhá fue uno de los principales puertos comerciales del
+              Postclásico tardío. Como parte del recorrido que actualmente puede
+              efectuarse, pueden observarse magníficos ejemplos de pintura
+              mural, en particular en el llamado “Edificio de los Pájaros”,
+              elaborados entre los años 200 y 600 d.C. En el Grupo Jaguar puede
+              también apreciarse un felino que da nombre al conjunto, el cual
+              fuera realizado entre el Postclásico medio y el tardío (1200 -
+              1550 d.C.).
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 5" class="card-content"
+              >Se localiza en la porción sur del estado de Quintana Roo, en lo
+              que fisiográficamente comprende la Región de los Lagos. Su nombre
+              original se desconoce por lo cual, Peter Harrison quien reportó
+              por primera vez el sitio, lo denominó con el mismo nombre del
+              ejido en el que se ubica. A decir de los pobladores más antiguos,
+              hablantes del maya, su nombre hace alusión al maíz colorado.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 6" class="card-content"
+              >Kinichná quiere decir Casa del sol en maya. La zona arqueológica
+              de Kinichná se encuentra en el sur del estado de Quintana Roo, al
+              noroeste de la ciudad de Chetumal, capital del estado y es forma
+              parte del complejo Dzibanché-Kinichná. <br /><br />El complejo
+              Dzibanché-Kinichná se encuentra en una zona de transición entre la
+              selva baja del norte de la Península de Yucatán y la selva
+              tropical lluviosa del Petén. El asentamiento ocupa una extensión
+              de más de 40 km2 y se conforma por cuatro grupos de arquitectura
+              monumental: Dzibanché o Grupo Principal, Complejo Central o Grupo
+              Lamay, Tutil y Kinichná, grupos que tuvieron funciones
+              específicas, intercomunicados por sacbés o caminos blancos mayas.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 7" class="card-content"
+              >Dzibanche (Escritura sobre Madera, en maya), ciudad maya que
+              floreció del año 300 al 1200 d.C., fue descubierta en 1927 por
+              Thomas Gann quien la bautizo así porque en el Templo VI o Templo
+              de los Dinteles encontró símbolos calendáricos grabados en madera.
+              Por su arquitectura sobresalen los templos del Búho y de Los
+              Cormoranes que junto a los del Norte y el Sur forman el patio de
+              Xibalba. Destaca la Plaza Gann donde se encuentra el edificio XIII
+              o edificio de los Cautivos, con representaciones de personajes en
+              actitud de sometimiento. Dzibanché-Kinichná en realidad
+              corresponde a un conjunto de complejos de arquitectura monumental,
+              vinculados no sólo por una historia común —a juzgar por la
+              uniformidad de estilos que comparten—, sino también físicamente, a
+              través de sacbeoob o caminos blancos que unen los complejos
+              mayores. Su cronología principal abarca la mayor parte del periodo
+              Clásico, del 300 al 900 d. C.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 8" class="card-content"
+              >Es la ciudad prehispánica más grande e importante que se ha
+              descubierto en la bahía de Chetumal y algunos investigadores
+              consideran que corresponde a la antigua Chactemal de las fuentes
+              histórica. Los primeros grupos mayas asentaron su residencia en
+              Oxtankah alrededor del año 600 a. C., permaneciendo ahí hasta 1100
+              d.C. En ese espacio temporal acontecieron tres momentos de alta
+              densidad poblacional: Preclásico tardío (300-50 a.C.) Clásico
+              temprano (250-600 d.C.) y Clásico tardío-terminal (600-900 d.C.).
+              La máxima prosperidad de su sistema socio-político, se alcanzó
+              durante el Clásico temprano, cuando los grupos dirigentes de
+              Oxtankah fungieron como rectores de las poblaciones aledañas,
+              reflejando su poder aún en la arquitectura.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 9" class="card-content"
+              >El nombre original del sitio se desconoce. La parte central de la
+              ciudad se encuentra rodeada por la laguna Om. Chakanbakán es el
+              nombre de otra laguna situada al norte del sitio arqueológico,
+              proviene de la lengua maya y significa rodeado de sabana. La
+              ciudad maya de Chakanbakán está considerada dentro de la extensión
+              geográfica del estilo Río Bec, sin embargo, el estilo imperante en
+              el sector nuclear es el Petén.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 10" class="card-content"
+              >La zona arqueológica de Cobá se localiza al oeste del poblado y
+              la zona arqueológica de Tulum. Al igual que para otros sitios del
+              área maya, no existe evidencia epigráfica que nos den a conocer el
+              nombre que tuvo el asentamiento en la época prehispánica; sin
+              embargo, algunas referencias coloniales y etnográficas del área,
+              permitieron que durante los años treinta del siglo XX, Eric
+              Thompson señalara que el nombre del sitio habría sido Kinchil
+              Cobá, en alusión al nombre del dios solar maya y de una
+              denominación esencialmente geográfica que se relacionaría con los
+              vocablos mayas cob (o kob), turbia o picada, y ha, agua, que
+              formarían la denominación Lugar de agua turbia o picada,
+              seguramente en referencia a los lagos en torno a los cuales fue
+              edificada la ciudad. Cobá es sin duda el asentamiento más
+              importante del noreste de la península de Yucatán comparable en
+              tamaño e importancia a Chichén Itzá, su rival y enemigo a lo largo
+              de gran parte de su historia prehispánica. Tiene una extensión de
+              poco más de 70 kilómetros cuadrados y una red de 45 caminos (o
+              sacbeob) que comunica a los diversos conjuntos del sitio, así como
+              a Cobá con otras comunidades menores y seguramente dependientes de
+              su dominio. Dentro de este complejo sistema de caminos, destaca el
+              de 100 kilómetros que une al sitio con el de Yaxuná, en el vecino
+              estado de Yucatán.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 11" class="card-content"
+              >El asentamiento, de tipo concéntrico, ocupa un área de 16.25
+              kilómetros cuadrados. Los tres primeros kilómetros corresponden a
+              la parte central y se caracterizan por la abundancia de
+              construcciones monumentales del tipo de la Plaza Central y el
+              Templo de los Siete Muertos; los restantes 13 kilómetros cuadrados
+              incluyen conjuntos arquitectónicos que se van volviendo más
+              dispersos y la última parte se compone de edificios con
+              plataformas escalonadas alrededor de plazas y pequeñas pirámides
+              sin bóveda. En total se han registrado alrededor de ocho mil
+              cuatrocientas estructuras. Las bóvedas de los edificios de piedra
+              se construyeron mediante el sistema de piedras seledizas y los
+              muros se levantaron a base de hiladas de piedras encimadas, unidas
+              por una mezcla y recubiertas en sus lados externo e interno por
+              una capa de estuco.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 12" class="card-content"
+              >Chacmultún pertenece a la Región Puuc; esta área recibe ese
+              nombre debido a la serranía o conjunto de colinas bajas (100
+              metros de altura aproximadamente) que rompen el paisaje plano del
+              sur de Yucatán y norte de Campeche. También se denomina así al
+              tipo de arquitectura maya que se caracteriza por el excelente
+              labrado de los sillares que revisten a los inmuebles, por los
+              juegos de claroscuros y por el uso de mosaico de piedra, logrado
+              con tamborcillos y bloques rectangulares, figuras humanas y de
+              animales, motivos geométricos, celosías y mascarones de múltiples
+              piezas que decoran las fachadas. La Región Puuc y los
+              asentamientos prehispánicos que en ella prosperaron tuvieron su
+              apogeo entre los años 600 y 1000 después de Cristo (Clásico
+              Tardío). El sitio fue contemporáneo a ciudades como Edzná,
+              Oxkintok, Uxmal y Kabah. Chacmultún tuvo un crecimiento paulatino
+              a partir del periodo Preclásico Tardío (300 antes de Cristo-300
+              después de Cristo), hasta alcanzar su máximo desarrollo en el
+              Clásico Terminal (900-1000 después de Cristo).
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 13" class="card-content"
+              >Entre 415 y 435 después de cristo comenzó el establecimiento de
+              Chichén Itzá con las primeras edificaciones, en una combinación de
+              estilos Puuc y Chenes. Aproximadamente en el año 500 se edificaron
+              la Iglesia, el Akab-Dzib, la Casa Colorada, la Casa del Ciervo y
+              el Edificio de las Monjas. Los itzaes conquistaron la ciudad hacia
+              el fin del Clásico e introdujeron el culto a Kukulkán, el
+              militarismo y una serie de nuevos elementos culturales asociados a
+              tradiciones precedentes y que dieron lugar a un estilo propio
+              llamado maya-yucateco. En esta ocupación se construyeron, entre
+              otros monumentos, el Juego de Pelota, El Caracol y los templos de
+              los Jaguares y del Hombre Barbado. Con la llegada de los toltecas,
+              quienes tomaron la ciudad entre los años 967 y 987, se creó un
+              nuevo estilo que mezclaba las tradiciones mayas con las
+              aportaciones de los conquistadores.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 14" class="card-content"
+              >Este sitio está localizado a 6 kilómetros de Chichén Itzá es una
+              caverna que fungió como centro ceremonial de los antiguos
+              pobladores mayas. Se puede admirar estalactitas y otras
+              formaciones de roca, pero el espacio más importante es una sala
+              que se localiza a 200 metros de la entrada y donde se encuentra
+              una estructura llamada el Trono de Balam. Al centro de esta misma
+              sala de 7 metros de altura, se alza un gran pilar formado por la
+              fusión de una estalacita con una estalagmita que tiene forma de
+              una gran ceiba, llamada “La Ceiba Sagrada.”<br /><br />
+              Existe una fuerte asociación entre cavernas y deidades del agua y
+              la lluvia, ya que muchas grutas contienen depósitos de agua. En el
+              área maya existe la antigua creencia de que las grutas, como
+              Balamkanché, son el refugio de los dioses de la lluvia. La gruta
+              de Balamkanché era conocida por la gente de la región desde hace
+              mucho tiempo y en ella se habían realizado estudios sobre la fauna
+              del lugar desde 1932.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 15" class="card-content"
+              >Acanceh es uno de los sitios arqueológicos más importantes del
+              norte de Yucatán. Su nombre significa Gemido de venado; se compone
+              de las palabras mayas akam gemido, y de keh venado. Un núcleo de
+              montículos situados en el corazón de la población actual son
+              conocidos como el sitio arqueológico de Acanceh, de los cuales
+              destacan por su monumentalidad y materiales empleados en su
+              edificación, La Pirámide y El Palacio de los Estucos. Este último
+              se distingue por el friso pintado con diversos colores y bello
+              decorado con motivos antropomorfos modelados.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 16" class="card-content"
+              >Uxmal es el asentamiento más representativo de la arquitectura de
+              la Región Puuc ya que sus fachadas están decoradas con mascarones
+              de Chac, el Dios de la Lluvia, grecas, paneles con jeroglíficos y
+              altas cresterías. Entre los edificios más representativos están la
+              Pirámide del Adivino, el Cuadrángulo de las Monjas y la Casa de
+              las Palomas. Además, debido a su majestuosidad, diversidad y el
+              estado de preservación de sus monumentos, el visitante podrá
+              aprender sobre los numerosos aspectos de la cultura maya
+              prehispánica, tales como, su florecimiento y sociedad cuyos
+              vestigios son admirables. Ubicación cronológica principal: Clásico
+              Tardío 600 a 900 d.C.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 17" class="card-content"
+              >Kabah es uno de los sitios más extensos e importantes del norte
+              de Yucatán; se ubica en un valle donde se aprovechan los
+              afloramientos rocosos y los lomeríos que cierran el valle por el
+              oeste, para edificar los distintos conjuntos arquitectónicos. El
+              sector nuclear presenta varias estructuras equiparables en tamaño
+              a las que se encuentran en sitios como Uxmal y Chichén Itzá y
+              constituyen magníficos ejemplos del estilo arquitectónico Puuc. En
+              términos generales, los principales edificios en Kabah se
+              distribuyen en tres grupos alineados en un eje este-oeste. El
+              resto del asentamiento se encuentra disperso, formando pequeños
+              conjuntos en forma de patios y/o plazas.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 18" class="card-content"
+              >La ocupación en Aké se inició desde el Preclásico tardío (300
+              a.C. a 300 d.C.) y continuó hasta el posclásico (1300 a 1450
+              d.C.). Aké alcanzó un alto nivel urbano desde época muy temprana y
+              sostuvo relaciones con sitios como Izamal, al cual se unió
+              mediante un sacbé de 32 kilómetros de largo y su influencia llegó
+              hasta la región de Río Bec, en Campeche, y Cobá en Quintana
+              Roo.<br /><br />
+              Aké es uno de los más importantes del norte de Yucatán y se conoce
+              ahora con el nombre de Ruinas de Aké por la hacienda de San
+              Lorenzo Aké que se erige sobre los antiguos vestigios mayas. El
+              vocablo maya Aké se refiere a un apellido y por tanto, también
+              puede señalar pertenencia a un linaje; en otro sentido, denomina a
+              un tipo de planta (bejuco). Es posible que esta zona arqueológica
+              haya tenido un papel importante en la región. Así lo sugieren su
+              gran tamaño, el amplio lapso en que fue habitado, la presencia del
+              sacbé que lo unía a Izamal, y a los cuatro sitios intermedios que
+              cruzan ese camino, y su situación geográfica (entre Tihó y la
+              antigua Mérida e Izamal).
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 19" class="card-content"
+              >Significa jaguar negro en maya. Este sitio fue, tal vez, el
+              principal centro de actividad del oriente del estado de Yucatán y
+              probablemente el más importante debido a su monumentalidad. Cabe
+              señalar que la Plaza Central destaca por su grandeza y está
+              formada por tres estructuras ceremoniales de grandes proporciones.
+              En el asentamiento existen, además, varios templos pequeños,
+              altares y edificios habitacionales. La pirámide principal conocida
+              como La Torre es comparable por su tamaño (30 metros de altura,
+              155 metros de largo y 60 metros de ancho) con las estructuras
+              sobresalientes mayas del noreste de Yucatán.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 20" class="card-content"
+              >El nombre del sitio debió ser Itsamal. Gracias a los documentos
+              mayas conocidos como Chilam Balam de Chumayel, se sabe que la
+              población de Izamal fue un importante aliado de la sociedad que
+              habitó Chichén Itzá en su lucha contra Mayapán. Además de
+              importantes monumentos prehispánicos, entre los que destaca el
+              Kinich Kak Moo por ser el más grande de la península yucateca, la
+              población actual conserva numerosos edificios coloniales, entre
+              ellos, uno de los más hermosos conventos construidos por la orden
+              franciscana en Yucatán.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 21" class="card-content"
+              >Mayapán abarca un área de más de cuatro kilómetros cuadrados, en
+              la que se concentran, aproximadamente 4 mil estructuras. Mayapán,
+              consta de una zona central en la que se localizan los principales
+              edificios, cívicos, administrativos y religiosos así como las
+              residencias de la clase gobernante. Se trata de salas sostenidas
+              por columnas o pilares, templos y adoratorios; esas espaciosas
+              estructuras están construidas sobre basamentos, tienen amplias
+              entradas divididas por columnas, un altar en la parte trasera y
+              banquetas a sus lados; destacan también los edificios circulares
+              conocidos como observatorios.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 22" class="card-content"
+              >La Casa de los Itzáes, con más de una veintena de edificios
+              monumentales nos habla de la concentración del poder político,
+              económico y religioso ocurrido en tiempos precolombinos
+              especialmente entre los años 600 y 1200 de nuestra era.
+              <br /><br />
+              El asentamiento precolombino tuvo una extensión promedio de 25
+              km². Las primeras evidencias de presencia humana datan del año 600
+              a.C. Una pequeña comunidad creció, se desarrolló y conformó, poco
+              antes del inicio de nuestra era, un gobierno centralizado. Se
+              construyó un eficiente sistema de captación, almacenamiento y
+              desecho pluvial; se concentró la producción, se erigieron grandes
+              edificios y se dominó a los pueblos de los alrededores. Edzná
+              constituyó una poderosa capital regional del occidente peninsular
+              entre los años 400 y 1000 d. C. L.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 23" class="card-content"
+              >La zona arqueológica de Balamkú se localiza dentro de un área
+              selvática en el estado de Campeche, por lo que ofrece al visitante
+              la oportunidad de convivir con la naturaleza mientras recorre esta
+              interesante ciudad prehispánica. En Balamkú se encuentra un friso
+              hecho a base de estuco modelado y policromado, único en el área
+              maya, que fue elaborado entre los años 550 y 650 de nuestra era.
+              La lectura minuciosa de esta obra de gran riqueza iconográfica
+              revela el complejo mundo conceptual de los antiguos mayas.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 24" class="card-content"
+              >Habitado a partir de 400 años a.C. y hasta 1100 d.C. El núcleo
+              urbano abarca unos 5km2 y destacan 20 conjuntos arquitectónicos.
+              El grupo A está coronado por la Estructura I, un edificio de
+              planta alargada y fachada tripartita decorada por mascarones
+              zoomorfos y rematado en tres torres, por lo que se considera
+              atípica ya que lo normal son dos torres en ambos extremos.
+              <br /><br />
+              La zona arqueológica debe su nombre a una aguada cercana llamada
+              Xpuhil, que en maya se refiere a una planta herbácea de la familia
+              de las cipráceas, abundante en la localidad y conocida por su
+              forma como Cola de Gato. Las primeras evidencias de ocupación
+              humana en el sitio datan del año 400 antes de Cristo, dentro del
+              periodo conocido como Preclásico Tardío; su auge, reflejado
+              principalmente en su arquitectura, parece haber sido durante el
+              Clásico Tardío (años 600-800 de nuestra era), y su decadencia se
+              dio hacia el Posclásico Temprano, en el año 1200 aproximadamente
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 25" class="card-content"
+              >Su nombre, que en maya significa La casa de la boca de la
+              serpiente (chi-boca, can-serpiente, ná-casa), posiblemente alude
+              al enorme mascaron de la fachada central de la Estructura II que
+              representa a Itzamná, el dios creador. En esta estructura se
+              pueden apreciar restos de estuco con colores rojo y azul, así como
+              algunos glifos. Es un sitio de gran riqueza y elegancia
+              iconográfica, plasmada tanto en el inmueble II como en el XX, éste
+              último de dos muelas. También cuenta con otros edificios como la
+              Estructura I, dotada de dos torres con escalinatas simuladas.
+              Otros edificios de la antigua ciudad son la III, VI y XI.
+            </ion-card-content>
+            <ion-card-content *ngIf="recurso == 26" class="card-content"
+              >El sitio de El Tigre es conocido desde los tiempos de la
+              Conquista como Itzamkanac; puerto fluvial de gran importancia y
+              ruta natural entre el Petén y la costa campechana. El Tigre se
+              extiende sobre un lomerío natural en la margen izquierda del Río
+              Candelaria, abarcando una superficie aproximada de 5 km2. El
+              Centro Ceremonial consta de 4 grandes estructuras y 6 de menores
+              dimensiones, 2 plazas, 13 altares y 3 estelas lisas. La Estructura
+              I cierra la plaza por el lado sur, la II por el este y por el lado
+              oeste la III que, en conjunto con la IV, forma la segunda plaza.
+              Uno de sus principales atractivos son los mascarones de estuco que
+              allí se encuentran.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

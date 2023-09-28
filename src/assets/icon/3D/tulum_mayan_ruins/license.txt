@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tulum Mayan Ruins
+* source:	https://sketchfab.com/3d-models/tulum-mayan-ruins-29efac0e29ac41ae96c5ccd2d29c17f7
+* author:	GSXNet (https://sketchfab.com/gsxn)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tulum Mayan Ruins" (https://sketchfab.com/3d-models/tulum-mayan-ruins-29efac0e29ac41ae96c5ccd2d29c17f7) by GSXNet (https://sketchfab.com/gsxn) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
